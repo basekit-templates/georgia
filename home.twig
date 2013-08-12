@@ -1,0 +1,35 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<section>
+    {{widget('feature', 'featurehome', {"header": "DISCOVER GEORGIA", "strapline":"AEN VITAER YOU ALA", "buttonText":"Find out more today →","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': false})|raw}}
+    <div class="header-wrapper clearfix">
+        <header>
+            <div class="wrapper clearfix">
+                <div class="scroll-down">
+                    <a class="scroll-arrow anchor" href="#anchor01">Scroll Down</a>
+                </div>
+                {{widget('extendednavigation', 'navigationheader', {})|raw}}
+            </div>
+        </header>
+    </div>
+</section>
+
+<div class="canvas">
+    <div class="main wrapper clearfix">
+        {{zone('main')|raw}}
+    </div>
+</div>
+
+<footer>
+    <div class="wrapper clearfix">
+        {{widget('content', 'footercolumn1content1', {"content":"<p>CONTACTOS</p>"})|raw}}        
+        {{widget('content', 'footercolumn1content2', {"content":"<h2>LOREM IPSUM ALAM YOU?</h2>"})|raw}}       
+        {{widget('profile', 'footercolumn1profileEmail', { 'profileType':'email', 'email':'profile'})|raw}}
+        {{widget('profile', 'footercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
+        <a id="anchor01" class="scroll-arrow up"></a>
+    </div>
+</footer>
+
+{% endblock %}

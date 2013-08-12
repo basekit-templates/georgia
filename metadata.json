@@ -1,0 +1,133 @@
+{
+    "name":"Georgia",
+    "thumbnail":"georgia.png",
+    "screenshot":"georgia.png",
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#f2f2f2",
+            "color3":"#c58888",
+            "color4":"#7f7f7f",
+            "color5":"#b5b5b5",
+            "color6":"#ffffff",
+            "color7":"#000000"
+        },
+        "Swatch 2": {
+            "color1":"#ffffff",
+            "color2":"#d8434e",
+            "color3":"#83c028",
+            "color4":"#2f353e",
+            "color5":"#787070",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        },
+        "Swatch 3": {
+            "color1":"#ffffff",
+            "color2":"#d8434e",
+            "color3":"#007aff",
+            "color4":"#6b6b75",
+            "color5":"#787070",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        },
+        "Swatch 4": {
+            "color1":"#ffffff",
+            "color2":"#49cc5f",
+            "color3":"#e2b70d",
+            "color4":"#485a67",
+            "color5":"#6f6f74",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        },
+        "Swatch 5": {
+            "color1":"#ffffff",
+            "color2":"#427e80",
+            "color3":"#685068",
+            "color4":"#5b4d5a",
+            "color5":"#6f8391",
+            "color6":"#434f5b",
+            "color7":"#ffffff"
+        }
+    },
+    "fontSwatch": {
+       "title": "Oswald",
+        "font1": {
+            "font-family": "Oswald",
+            "font-size": "36px",
+            "font-weight": "inherit",
+            "line-height": "44px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "Oswald",
+            "font-size": "32px",
+            "font-weight": "inherit",
+            "line-height": "40px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "Oswald",
+            "font-size": "26px",
+            "font-weight": "inherit",
+            "line-height": "38px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "Oswald",
+            "font-size": "20px",
+            "font-weight": "inherit",
+            "line-height": "32px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "Vollkorn",
+            "font-size": "18px",
+            "font-weight": "inherit",
+            "line-height": "36px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "Oswald",
+            "font-size": "15px",
+            "font-weight": "300",
+            "line-height": "28px",
+            "color": "@color-swatch6",
+            "color-hover": "@color-swatch3",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "@color-swatch3"
+        },
+        "font7": {
+            "font-family": "Oswald",
+            "font-size": "15x",
+            "font-weight": "inherit",
+            "line-height": "36px",
+            "color": "@color-swatch1",
+            "letter-spacing": "1px",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "darken(@color-swatch3,5%)"
+        },
+        "font8": {
+            "font-family": "Oswald",
+            "font-size": "66px",
+            "font-weight": "300",
+            "line-height": "68px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "Vollkorn",
+            "font-size": "15px",
+            "font-weight": "inherit",
+            "line-height": "38px",
+            "color": "@color-swatch5",
+            "letter-spacing": "3px"
+        }
+    }
+}
