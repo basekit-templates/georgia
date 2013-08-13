@@ -105,7 +105,7 @@
         },
         "font7": {
             "font-family": "Oswald",
-            "font-size": "15x",
+            "font-size": "15px",
             "font-weight": "inherit",
             "line-height": "36px",
             "color": "@color-swatch1",
