@@ -3,13 +3,11 @@
 {% block content %}
 
 <section>
-    {{widget('feature', 'featurehome', {"header": "DISCOVER GEORGIA", "strapline":"AEN VITAER YOU ALA", "buttonText":"Find out more today →","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': false})|raw}}
+    {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"Lorem Ipsum","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': false})|raw}}
     <div class="header-wrapper clearfix">
         <header>
             <div class="wrapper clearfix">
-                <div class="scroll-down">
-                    <a class="scroll-arrow anchor" href="#anchor01">Scroll Down</a>
-                </div>
+                {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
                 {{widget('extendednavigation', 'navigationheader', {})|raw}}
             </div>
         </header>

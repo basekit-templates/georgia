@@ -2,55 +2,28 @@
 
 {% block content %}
 
-<div class="canvas bk-pt-default">
+<div class="bk-pt-default">
 
-<header>
-    <ul class="headerborder">
-       <li class="color1"></li>
-       <li class="color2"></li>
-       <li class="color3"></li>
-    </ul>
+ <header>
     <div class="wrapper clearfix">
-        <div class="companyheader clearfix">
-            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-            {{widget('companyname', 'companyname', {"business": "Smart Inc."})|raw}}
-        </div>
+        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
         {{widget('extendednavigation', 'navigationheader', {})|raw}}
     </div>
 </header>
 
-<div class="pageintro">
-    <div class="wrapper">
-        <h4>{{ page.title }}</h4>
+<div class="canvas">
+    <div class="main wrapper clearfix">
+        {{zone('main')|raw}}
     </div>
 </div>
 
-<div class="main wrapper clearfix">
-    {{zone('main')|raw}}
-</div>
-
-<ul class="headerborder">
-   <li class="color1"></li>
-   <li class="color2"></li>
-   <li class="color3"></li>
-</ul>
 <footer>
     <div class="wrapper clearfix">
-        <div class="responsivecolumns columns-three-33-34-33">
-            <div class="column columns-three-left">
-                {{widget('logo', 'footercolumn1logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-                {{widget('companyname', 'footercolumn1companyname', {"business": "Smart Inc."})|raw}}
-            </div>
-            <div class="column columns-three-middle">
-                {{widget('content', 'footercolumn2content1', {"content":"<h4>IPSUMS</h4>"})|raw}}
-                {{widget('profile', 'footercolumn2profileaddress', { 'profileType':'address', 'address':'profile'})|raw}}
-            </div>
-            <div class="column columns-three-right">
-                {{widget('content', 'footercolumn3content1', {"content":"<h4>CONTACTO</h4>"})|raw}}
-                {{widget('profile', 'footercolumn3profileEmail', { 'profileType':'email', 'email':'profile'})|raw}}
-                {{widget('profile', 'footercolumn3profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}}
-            </div>
-        </div>
+        {{widget('content', 'footercolumn1content1', {"content":"<p>CONTACTOS</p>"})|raw}}        
+        {{widget('content', 'footercolumn1content2', {"content":"<h2>LOREM IPSUM ALAM YOU?</h2>"})|raw}}       
+        {{widget('profile', 'footercolumn1profileEmail', { 'profileType':'email', 'email':'profile'})|raw}}
+        {{widget('profile', 'footercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
+        <a id="anchor01" class="scroll-arrow up"></a>
     </div>
 </footer>
 

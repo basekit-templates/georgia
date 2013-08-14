@@ -87,14 +87,14 @@ ul, ol, li {
 
 blockquote {
   background: lighten(@color-swatch5,20%);
-  border-left:6px solid @color-swatch2;
   margin:0;
   padding: 14px 16px;
   quotes:"\201C""\201D""\2018""\2019";
 }
 
 blockquote {
-  background: lighten(@color-swatch5,20%);
+  background: darken(@color-swatch1,5%);
+  border: 1px solid darken(@color-swatch1,10%);
   margin:0;
   padding: 20px;
   quotes:"\201C""\201D""\2018""\2019";
@@ -139,12 +139,16 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 /* DEAFULT PAGE TYPES */
 
 .bk-pt-default .extendednavigation ul li:hover > ul {
-  border: 1px solid lighten(@color-swatch5,40%);
-  border-top: 0;
+
 }
 
-.bk-pt-default .main {
-    padding: 40px 0;
+.bk-pt-default header {
+  position: relative;
+  background-color: lighten(@color-swatch7,15%);
+}
+
+.bk-pt-default .widget.extendednavigation li:hover > ul {
+  top: inherit;
 }
 
 /* HEADER */
@@ -177,21 +181,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 }
 
 
-/* PAGE INTRO */
-
-.pageintro {
-  padding: 0.2em 0;
-  background-color: lighten(@color-swatch5,46%);
-}
-
-.pageintro h4 {
-  padding-bottom: 0;
-  color: lighten(@color-swatch4,40%);
-  text-shadow: 0px 1px 0px #fff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
 
 /* ===============================
    HEADER
@@ -216,13 +205,21 @@ header {
 .widget.companyname {
   display: block;
   float: left;
-  margin-top: 10px;
+  margin: 24px 0px;
 }
 
-.widget.companyname h1 {
-  margin: 0;
-  padding: 0;
-  letter-spacing: -1px;
+.widget.companyname a {
+  font-family:@font-swatch10-font-family;
+  font-weight: @font-swatch10-font-weight;
+  color:@font-swatch10-color;
+  line-height:@font-swatch10-line-height;
+  letter-spacing: @font-swatch10-letter-spacing;
+  font-size: @font-swatch10-font-size;
+}
+
+.widget.companyname a:hover {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* LOGO */
@@ -391,7 +388,6 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
   background-position: right 41px;
   background-repeat: no-repeat;
   cursor: pointer;
-  color: @font-swatch6-color;
 }     
 
 .widget.extendednavigation ul li.folder:hover {
@@ -476,7 +472,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
   text-align: left!important;
 }
 
-.main .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
+.main .widget.extendednavigation ul li a, .main .widget.extendednavigation ul li.folder .text {
   display: block;
   padding: 32px 30px;
   font-family:@font-swatch6-font-family;
@@ -488,7 +484,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
 }
 
 .main .widget.extendednavigation ul li a:hover, .main .widget.extendednavigation ul li.folder .text:hover {
-  color: @font-swatch4-color;
+  color: lighten(@font-swatch4-color,10%);
   text-decoration: none;
 }
 
@@ -1042,6 +1038,7 @@ hr.line.align-right {
 .widget.clicktocall a.bold {
     font-weight: bold;
 }
+
 
 /* ===============================
    REDIRECT WIDGET
@@ -1927,7 +1924,6 @@ hr.line.align-right {
 
   }
 
-
     /* SLIDESHOW */
 
     .widget.responsiveslideshow .slideshow-widget-wrapper {
@@ -2022,6 +2018,7 @@ hr.line.align-right {
       width: 50%;
       padding-bottom: 50%;
   }
+
 
 }
 
