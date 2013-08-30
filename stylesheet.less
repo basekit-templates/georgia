@@ -160,28 +160,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 }
 
 
-/* ANCHOR SCROLL DOWN */
-
-.scroll-down {
-    float: left;
-    padding: 30px 0px;
-}
-
-.scroll-down a.scroll-arrow {
-    display: block;
-    background-image: image('/images/scroll-down.png');
-    background-repeat: no-repeat;
-    text-indent: -9999px;
-    width: 28px;
-    height: 28px;
-}
-
-.scroll-down a.scroll-arrow.up {
-    background-image: image('/images/scroll-up.png');
-}
-
-
-
 /* ===============================
    HEADER
    =============================== */
@@ -1340,8 +1318,9 @@ hr.line.align-right {
 }
 
 .widget.socialicons a, .widget.profile .bk-profile-socialicons a {
-    text-decoration: none;
-    text-indent: -9999px;
+    text-decoration: none;  
+    text-indent: 9999px;
+    white-space: nowrap;
 }
 
 .widget.profile .bk-profile-socialicons span {
