@@ -2,6 +2,11 @@
     "name":"Georgia",
     "thumbnail":"georgia.png",
     "screenshot":"georgia.png",
+    "tags": {
+    "en": ["fullscreen", "dark", "photography", "modern"],
+    "es": ["pantalla completa", "oscuro", "fotografico", "moderno"],
+    "br": ["expandido", "escuro", "fotografia", "moderno"]
+    },
     "colorSwatches":
     {
         "Swatch 1": {
