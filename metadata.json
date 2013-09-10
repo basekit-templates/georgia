@@ -3,9 +3,9 @@
     "thumbnail":"georgia.png",
     "screenshot":"georgia.png",
     "tags": {
-    "en": ["fullscreen", "dark", "photography", "modern"],
-    "es": ["pantalla completa", "oscuro", "fotografico", "moderno"],
-    "br": ["expandido", "escuro", "fotografia", "moderno"]
+    "en": ["fullscreen", "dark", "photography", "modern", "stylish", "agency", "magazine", "creative", "elegant", "professional", "sophisticated", "media", "sans-serif"],
+    "es": ["pantalla completa", "oscuro", "fotografico", "moderno", "estilo", "agencia", "revista", "creativo", "elegante", "profesional", "sofisticado", "comunicacion", "sans-serif"],
+    "br": ["expandido", "escuro", "fotografia", "moderno", "estilo", "agência", "revista", "criativo", "elegante", "profissional", "sofisticado", "mídia", "sans-serif"]
     },
     "colorSwatches":
     {
