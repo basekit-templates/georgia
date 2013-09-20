@@ -900,7 +900,8 @@ footer p {
     bottom: 0px;
     left: 0px;
     right: 0px;
-    margin-bottom: -56px;
+    margin-bottom: -310px;
+    max-height: 284px;
     background:@color-swatch7;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px;
@@ -930,6 +931,20 @@ footer p {
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+/* Lightbox */
+
+.lb-data .lb-caption, .lb-data .lb-number {
+  font-family:@font-swatch5-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight: @font-swatch5-font-weight;
+  line-height:@font-swatch5-line-height;
+  color:lighten(@font-swatch5-color,50%);
+}
+
+.lb-data .lb-number {
+  font-size:bkscale(@font-swatch5-font-size,0.9);
 }
 
 
@@ -1853,6 +1868,14 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
         height: 700px;
     }
 
+     /* GALLERY */
+    .widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
+      max-height: 220px;
+      font-size:bkscale(@font-swatch5-font-size,0.9);
+      line-height:bkscale(@font-swatch5-line-height,0.9);
+    }
+
+
     /* SLIDESHOW */
 
     .widget.responsiveslideshow .slideshow-widget-wrapper {
@@ -1966,6 +1989,15 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
   .widget.feature button {
 
   }
+
+     /* GALLERY */
+    
+    .widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
+      max-height: 150px;
+      font-size:bkscale(@font-swatch5-font-size,0.8);
+      line-height:bkscale(@font-swatch5-line-height,0.8);
+    }
+
 
     /* SLIDESHOW */
 
