@@ -2,8 +2,7 @@
    IMPORT CSS
    =============================== */
 
-   @import "@{templateCommon}/paypal.less";
-   @import "@{templateCommon}/dropbox.less";
+   @import "@{templateCommon}/basekit-bootstrap.less";
 
 
 /* ===============================
@@ -370,6 +369,9 @@ footer p {
   background-position: right 41px;
   background-repeat: no-repeat;
   cursor: pointer;
+  &:after {
+	  display: none;
+  }
 }     
 
 .widget.extendednavigation ul li.folder:hover {
@@ -1723,16 +1725,20 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     font-size: 0;
     z-index: 11;
     text-indent: -99999px;
+    background-color: @color-swatch4;
+    background-position: center;
+    background-size: 100%;
+	border-radius: 100%;
 }
 
 .widget.responsiveslideshow .slideshow-widget .btn-prev {
     left: 30px;
-    background: image('/images/slideshow-arrow-prev.png') no-repeat center left;
+    background-image: image('/images/slideshow-arrow-prev.png');
 }
 
 .widget.responsiveslideshow .slideshow-widget .btn-next {
     right: 30px;
-    background: image('/images/slideshow-arrow-next.png') no-repeat center right;   
+    background-image: image('/images/slideshow-arrow-next.png');
 }
 
 .widget.responsiveslideshow .slideshow-widget-controls {
@@ -1748,14 +1754,12 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     text-indent: -99999px;
 }
 
-.widget.responsiveslideshow .slideshow-widget:hover .btn-play.pause
-{
+.widget.responsiveslideshow .slideshow-widget:hover .btn-play.pause {
     background: image('/images/slideshow-pause.png') center no-repeat;
-    background-size: 100%;  
+    background-size: 100%;
 }
 
-.widget.responsiveslideshow .slideshow-widget-controls .dot
-{
+.widget.responsiveslideshow .slideshow-widget-controls .dot {
     border: none;
     cursor: pointer;
     background-color: darken(@color-swatch2,15%);
@@ -1767,8 +1771,7 @@ footer .widget.socialicons span a, footer .widget.profile .bk-profile-socialicon
     margin: 0px 3px;
 }
 
-.widget.responsiveslideshow .slideshow-widget-controls .dot.selected
-{
+.widget.responsiveslideshow .slideshow-widget-controls .dot.selected {
     background-color: @color-swatch3;
 }
 
