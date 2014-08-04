@@ -49,10 +49,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 /* DEAFULT PAGE TYPES */
 
-.bk-pt-default .extendednavigation ul li:hover > ul {
-
-}
-
 .bk-pt-default header.bk-header {
   position: relative;
   background-color: lighten(@color-swatch7,15%);
@@ -439,20 +435,6 @@ footer.bk-footerp {
     }
 }
 
-/* Lightbox */
-
-.lb-data .lb-caption, .lb-data .lb-number {
-  font-family:@font-swatch5-font-family;
-  font-size:@font-swatch5-font-size;
-  font-weight: @font-swatch5-font-weight;
-  line-height:@font-swatch5-line-height;
-  color:lighten(@font-swatch5-color,50%);
-}
-
-.lb-data .lb-number {
-  font-size:bkscale(@font-swatch5-font-size,0.9);
-}
-
 
 /* ===============================
    DIVIDER WIDGET
@@ -502,69 +484,6 @@ hr.line.align-right {
 
 .widget.clicktocall a:hover {
   cursor: pointer;
-}
-
-
-/* CLICK TO CALL - JUSTIFY */
-
-.widget.clicktocall a.justifyleft
-{
-    text-align: left;
-}
-
-.widget.clicktocall a.justifycenter
-{
-    text-align: center;
-}
-
-.widget.clicktocall a.justifyright
-{
-    text-align: right;
-}
-
-.widget.clicktocall a.justifyfull
-{
-    text-align: justify;
-}
-
-.widget.clicktocall a.italic {
-    font-style: italic;
-}
-
-.widget.clicktocall a.bold {
-    font-weight: bold;
-}
-
-
-/* ===============================
-   REDIRECT WIDGET
-   =============================== */
-
-.widget.redirecttodesktop {
-    padding: 8px 0;
-}
-
-.widget.redirecttodesktop a {
-    padding-right: 30px;
-    padding-top: 2px;
-    background-image: image('/images/desktop.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    font-size: 12px;
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
-    text-decoration: none;
-    cursor: pointer;
-    color: @font-swatch5-color;
-    font-family: @font-swatch5-font-family;
-
-}
-
-.widget.redirecttodesktop a:hover, .desktop a:active {
-    background-image: image('/images/desktop.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    cursor: pointer;
-    text-decoration: underline;
 }
 
 /* ===============================
@@ -949,7 +868,7 @@ hr.line.align-right {
 }
 
 .widget.profile a:hover {
-  color: @color-swatch1;
+  color: darken(@color-swatch5, 5%);
   text-decoration: none;
 }
 
@@ -1319,6 +1238,9 @@ footer.bk-footer .widget.socialicons span a, footer.bk-footer .widget.profile .b
 
 .widget.ecombasket .ecombasket-pull {
     margin: 0 0 15px;
+    p:before {
+      top: 0;
+    }
 }
 
 .widget.ecomproductslist .productlist-filter .productlist-display-form {
@@ -1396,6 +1318,17 @@ footer.bk-footer .widget.socialicons span a, footer.bk-footer .widget.profile .b
     line-height: @font-swatch4-line-height;
     letter-spacing: @font-swatch4-letter-spacing;
     color: @color-swatch5;
+}
+
+// Ecom Basket Summary
+
+.ecombasketsummary a, .ecombasket .ecombasket-pull p {
+  font-family: @font-swatch7-font-family;
+  font-size: @font-swatch7-font-size;
+  font-weight: @font-swatch7-font-weight;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 // Single Product
@@ -1548,7 +1481,7 @@ footer.bk-footer .widget.socialicons span a, footer.bk-footer .widget.profile .b
         color: @color-swatch1;
         box-shadow: none;
         &:hover {
-            background-color: @color-swatch1;
+            background-color: darken(@color-swatch5, 5%);
             border-color: @color-swatch3;
             color: @color-swatch4;
         }
@@ -1643,7 +1576,7 @@ footer.bk-footer .widget.socialicons span a, footer.bk-footer .widget.profile .b
     a {
         color: @color-swatch4;
         &:hover {
-            color: @color-swatch2;
+            color: darken(@color-swatch4, 5%);
             text-decoration: none;
         }
     }
@@ -1669,9 +1602,13 @@ footer.bk-footer .widget.socialicons span a, footer.bk-footer .widget.profile .b
         padding: 0;
     }
     .menu-item-image-wrap {
-        background-position: -1000%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 180px;
+        margin: 0.25em 0 0.75em;
+        background-position: center;
         img {
-            max-height: 300px;
+            display: none;
         }
     }
 }
@@ -1770,6 +1707,9 @@ footer.bk-footer .widget.socialicons span a, footer.bk-footer .widget.profile .b
       -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
       -moz-box-sizing: border-box;    /* Firefox, other Gecko */
       box-sizing: border-box;         /* Opera/IE 8+ */
+      span {
+        background: none;
+      }
     }
 
     .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
