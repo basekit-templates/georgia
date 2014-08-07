@@ -2,7 +2,7 @@
    IMPORT CSS
    =============================== */
 
-   @import "@{templateCommon}/basekit-bootstrap.less";
+@import "@{templateCommon}/basekit-bootstrap.less";
 
 
 /* ===============================
@@ -25,7 +25,6 @@ body {
 .canvas .widget {
     clear: both;
 }
-
 
 /* ===============================
    CUSTOM CSS
@@ -243,6 +242,11 @@ footer.bk-footerp {
   height: auto;
   padding-bottom: 90px;
   text-align: right;
+  .feature-btn {
+    float: right;
+    display: block;
+    width: 100%;
+  }
   button span {
     padding-right: 8px;
     vertical-align: inherit;
@@ -278,15 +282,14 @@ footer.bk-footerp {
   border-right: 1px solid @color-swatch7;
   border-bottom: 1px solid @color-swatch7;
   box-shadow: 2px 2px 0px rgba(255,255,255,0.2);
-
   background-color: @font-swatch7-background-color;
   font-family: @font-swatch7-font-family;
   font-weight:@font-swatch7-font-weight;
-  line-height: @font-swatch7-line-height;
   letter-spacing: @font-swatch7-letter-spacing;
   background-color: @font-swatch7-background-color;
   color: @font-swatch7-color;
-  font-size: .9em;
+  font-size: bkscale(@font-swatch5-font-size, 0.95);
+  line-height: bkscale(@font-swatch5-line-height, 1.05);
   text-decoration: none;
   text-shadow: 0px 1px 1px rgba(0,0,0,0.1);
 }
@@ -311,8 +314,7 @@ footer.bk-footerp {
 }
 
 .widget.button button,
-.blog-search-form button
-{
+.blog-search-form button{
   margin: 0.5em 0em;
   padding: 12px 14px;
   border: 1px solid @color-swatch1;
@@ -350,14 +352,15 @@ footer.bk-footerp {
    CONTENT CSS
    =============================== */
 
-.widget.content
-{
+.widget.content {
     padding: 0;
     overflow: hidden;
+    button.btn {
+      .clearfix;
+    }
 }
 
-.widget.content span.expand
-{
+.widget.content span.expand {
     font-family: @font-swatch3-font-family;
     background-color: @color-swatch3;
     color: @font-swatch7-color;
@@ -1977,4 +1980,3 @@ footer.bk-footer .widget.socialicons span a, footer.bk-footer .widget.profile .b
 .clearfix {
   *zoom: 1;
 }
-
