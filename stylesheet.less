@@ -3,6 +3,7 @@
    =============================== */
 
 @import "@{templateCommon}/basekit-bootstrap.less";
+@import "@{templateLocal}/css/layout-header.less";
 
 
 /* ===============================
@@ -84,7 +85,6 @@ header.bk-header {
 
 // Company Name
 .widget.companyname { 
-    float: left;
     width: 20%;
     @media @tablet {
       width: 80%;
@@ -94,8 +94,14 @@ header.bk-header {
 // Logo
 .widget.logo {
     margin-right: 10px;
-    float:left;
     margin-top:5px;
+}
+
+.widget {
+    &.logo, &.companyname, {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
 /* ===============================
@@ -138,8 +144,6 @@ footer.bk-footerp {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    float: right;
-    width: 69%;
     @media @tablet {
       float: none;
     }
