@@ -58,27 +58,28 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   bottom: inherit;
 }
 
-/* HEADER */
-
-.header-wrapper {
-  position: relative;
-  bottom: 0px;
-  z-index: 9999;
-}
-
 
 /* ===============================
    HEADER
    =============================== */
 
+.widget.feature + .header-wrapper {
+  position: relative;
+  bottom: 0px;
+  z-index: 9999;
+  .bk-header {
+    background-color: hsla(hue(@color-swatch7), saturation(@color-swatch7), lightness(lighten(@color-swatch7,10%)), 0.6); 
+    position: absolute;
+  }
+}
+
 header.bk-header {
   padding: 10px 0;
+  position: relative;
   width: 100%;
-  position: absolute;
   bottom: 0px;
-  background-color: hsla(hue(@color-swatch7), saturation(@color-swatch7), lightness(lighten(@color-swatch7,10%)), 0.6); 
+  background-color: @color-swatch7;
   @media @tablet {
-    background-color: lighten(@color-swatch7,15%);
     box-shadow: 0 -3px 3px hsla(hue(@color-swatch7), saturation(@color-swatch7), lightness(lighten(@color-swatch7,10%)), 0.2); 
   }
 }
