@@ -8,8 +8,10 @@
         <header class="bk-header">
             <div class="wrapper clearfix">
                 <div class="flex-container">
-                    {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-                    {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+                    <div class="brand">
+                        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+                        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+                    </div>
                     {{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
                 </div>
             </div>
@@ -25,10 +27,10 @@
 
 <footer class="bk-footer">
     <div class="wrapper clearfix">
-        {{widget('content', 'footercolumn1content1', {"content":"<p>CONTACTOS</p>"})|raw}}        
-        {{widget('content', 'footercolumn1content2', {"content":"<h2>LOREM IPSUM ALAM YOU?</h2>"})|raw}}       
+        {{widget('content', 'footercolumn1content1', {"content":"<p>CONTACTOS</p>"})|raw}}
+        {{widget('content', 'footercolumn1content2', {"content":"<h2>LOREM IPSUM ALAM YOU?</h2>"})|raw}}
         {{widget('profile', 'footercolumn1profileemail', { 'profileType':'email', 'email':'profile'})|raw}}
-        {{widget('profile', 'footercolumn1profilephone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
+        {{widget('profile', 'footercolumn1profilephone', { 'profileType':'phone', 'phone':'profile'})|raw}}
     </div>
 </footer>
 
