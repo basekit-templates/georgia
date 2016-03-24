@@ -145,13 +145,9 @@ footer.bk-footerp {
    =============================== */
 
 .widget.extendednavigation {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 0 auto;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
+  width: 70%;
+  display: inline-block;
+  float: right;
     @media @tablet {
       display: block;
       float: none;
@@ -175,6 +171,9 @@ footer.bk-footerp {
     background-color: @color-swatch1;
     box-shadow: 0 6px 0 @color-swatch1, 0 12px 0 @color-swatch1;
     width: 21px;
+  }
+  @media @tablet {
+    top: 20px;
   }
 }
 
