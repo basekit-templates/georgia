@@ -65,6 +65,17 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 header.bk-header {
   min-height: 85px;
+
+  .flex-container {
+    @media @tablet {
+      -webkit-box-align: initial;
+      -webkit-align-items: initial;
+      -ms-flex-align: initial;
+      -ms-grid-row-align: initial;
+      align-items: initial;
+      position: relative;
+    }
+  }
 }
 
 .widget.feature + .header-wrapper {
@@ -72,8 +83,12 @@ header.bk-header {
   bottom: 0px;
   z-index: 9999;
   .bk-header {
-    background-color: hsla(hue(@color-swatch7), saturation(@color-swatch7), lightness(lighten(@color-swatch7,10%)), 0.6);
+    background-color: hsla(hue(@color-swatch7), saturation(@color-swatch7), lightness(lighten(@color-swatch7,10%)), 1);
     position: absolute;
+
+    @media @tablet {
+      position: relative;
+    }
   }
 }
 
@@ -149,15 +164,9 @@ footer.bk-footerp {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    position: relative;
+    position: initial;
     display: inline-block;
     vertical-align: middle;
-    @media @tablet {
-      display: block;
-      float: none;
-      padding: 0;
-      width: 100%;
-    }
     li.selected a span {
       border-bottom: 1px solid white;
       padding-bottom: 5px;
@@ -170,7 +179,8 @@ footer.bk-footerp {
 }
 
 .widget.extendednavigation a.pull {
-  top: -30px;
+  top: 25px;
+
   &:after {
     background-color: @color-swatch1;
     box-shadow: 0 6px 0 @color-swatch1, 0 12px 0 @color-swatch1;
@@ -521,6 +531,7 @@ hr.line.align-right {
 .widget.twitter p {
   color: @color-swatch5;
   text-shadow: 0px 1px 0px @color-swatch1;
+  word-wrap: break-word;
 }
 
 .widget.twitter .twitter-content p a {
@@ -1892,8 +1903,6 @@ footer.bk-footer .widget.socialicons span a, footer.bk-footer .widget.profile .b
   /* NAV */
 
   .widget.extendednavigation {
-    display: block;
-    width: 100%;
     padding: 0;
   }
 
