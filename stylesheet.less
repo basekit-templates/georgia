@@ -173,6 +173,10 @@ footer.bk-footerp {
     }
 }
 
+.widget .extendednavigation ul {
+  padding-top:0!important;
+}
+
 .widget .extendednavigation ul li:hover ul {
   background-color:@color-swatch7;
   padding: 10px 0;
@@ -249,6 +253,10 @@ footer.bk-footerp {
   li .text {
     padding: 2px 10px;
   }
+}
+
+.widget .extendednavigation ul li:hover ul, .widget .navigation ul li:hover ul {
+
 }
 
 .widget.extendednavigation li:hover > ul li a {
@@ -2151,7 +2159,7 @@ footer.bk-footer .widget.socialicons span a, footer.bk-footer .widget.profile .b
 
 
 // On devices with touch enabled, hover is disabled and the JS toggle (.folder-open) is used
-.extendednavigation .folder {
+.widget.extendednavigation .folder {
 
     // Hides hover state
     &:hover ul {
