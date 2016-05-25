@@ -231,7 +231,6 @@ footer.bk-footerp {
 }
 
 .widget.extendednavigation li:hover > ul {
-  display: block;
   position: absolute;
   right: 0;
   left: 0;
@@ -1947,11 +1946,10 @@ footer.bk-footer .widget.socialicons span a, footer.bk-footer .widget.profile .b
     }
 
     .widget.extendednavigation ul li > ul {
-        display: none!important;
+        display: none;
     }
 
     .widget.extendednavigation ul li:hover > ul {
-        display: block!important;
         width: 100%;
         bottom: inherit;
         padding: 0;
@@ -2127,4 +2125,42 @@ footer.bk-footer .widget.socialicons span a, footer.bk-footer .widget.profile .b
 }
 .clearfix {
   *zoom: 1;
+}
+
+
+// Touch detection folder styling
+// --------------------------------
+
+
+// On devices without touch enabled, hover events will work as normal
+.no-touch {
+    .extendednavigation .folder {
+
+       // Hides JS toggle open
+        &.folder-open ul {
+            display: none;
+        }
+
+        // Activates hover state open
+        &:hover > ul {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+
+// On devices with touch enabled, hover is disabled and the JS toggle (.folder-open) is used
+.extendednavigation .folder {
+
+    // Hides hover state
+    &:hover ul {
+        display: none;
+    }
+
+    // Activates JS toggle open
+    &.folder-open ul {
+        display: block;
+        width: 100%;
+    }
 }

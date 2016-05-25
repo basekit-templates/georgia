@@ -31,17 +31,22 @@
 
 	{% block content %}
 	{% endblock %}
-	
+
 	{% include basekit.bodyScript %}
+
+	<!-- jQuery -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+
+		<!-- Touch Script -->
+	<script>
+	    $(document).on('mq4hsChange', function (e) {
+	        console.log(e);
+	        $(document.documentElement).toggleClass('no-touch', e.trueHover);
+	    });
+	</script>
+
+	<!-- Touch Shim -->
+	<script src="{{asset('js/mq4-hover-shim.js')}}"></script>
+
 </body>
 </html>
-
-<script type="text/javascript">
-	! function () {
-	    function supportsSVG() {
-	        return !!document.createElementNS && !! document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect
-	    }
-	    if (supportsSVG()) document.documentElement.className += ' svg'
-	}()
-</script>
-
