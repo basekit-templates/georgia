@@ -1,7 +1,7 @@
 {
     "name":"Georgia",
     "thumbnail":"georgia.png",
-    "screenshot":"georgia.png",
+    "screenshot":"georgia-screenshot.jpg",
     "templateType":"standard",
     "pageTypes": ["home"],
     "tags": {
