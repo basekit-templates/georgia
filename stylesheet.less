@@ -240,7 +240,6 @@ footer.bk-footerp {
   left: 0;
   background-color: @color-swatch7;
   z-index: 500;
-  padding: 20px 0px;
 }
 
 .widget.extendednavigation li:hover > ul li {
@@ -253,10 +252,6 @@ footer.bk-footerp {
   li .text {
     padding: 2px 10px;
   }
-}
-
-.widget .extendednavigation ul li:hover ul, .widget .navigation ul li:hover ul {
-
 }
 
 .widget.extendednavigation li:hover > ul li a {
@@ -2169,6 +2164,27 @@ footer.bk-footer .widget.socialicons span a, footer.bk-footer .widget.profile .b
     // Activates JS toggle open
     &.folder-open ul {
         display: block;
+        position: absolute;
+	right: 0;
+	left: 0;
+	background-color: @color-swatch7;
+	z-index: 500;
+	padding: 10px 0px;
         width: 100%;
+        
+        li {
+        	display: block;
+  		width: 100%;
+        }
+        
+        li.text {
+        	padding: 2px 10px	
+        }
+        
+        li a {
+        	display: block;
+		  color: @color-swatch5;
+		  padding: 0;
+        }
     }
 }
