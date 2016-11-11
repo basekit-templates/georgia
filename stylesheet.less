@@ -572,25 +572,33 @@ hr.line.align-right {
 
 
 /* ===============================
-   CONTACT FORM WIDGET
+   CONTACT FORM AND ADVANCED FORM
    =============================== */
 
-.widget.contactform form {
+.widget.contactform form,
+.advancedcontactform form {
     display: block;
     padding: 0px;
     margin: 0 0 30px;
 }
 
-.widget.contactform fieldset {
+.widget.contactform fieldset,
+.advancedcontactform fieldset {
     border: none;
     padding: 0;
     margin: 0;
 }
 
-.widget.contactform fieldset label {
+.widget.contactform fieldset label,
+.advancedcontactform .form-group>label {
     float: left;
     width: 100%;
     margin-bottom: 3px;
+  }
+
+.widget.contactform fieldset label,
+.advancedcontactform .form-group>label,
+.advancedcontactform .option-list .option-item .label {
     font-family:@font-swatch4-font-family;
     font-size: 16px;
     font-weight: @font-swatch4-font-weight;
@@ -599,7 +607,11 @@ hr.line.align-right {
     letter-spacing: @font-swatch4-letter-spacing;
 }
 
-.widget.contactform fieldset input {
+
+.widget.contactform fieldset input,
+.advancedcontactform form input[type=email], 
+.advancedcontactform form input[type=text],
+.advancedcontactform form select {
     width: 100%;
     height: 64px;
     padding: 0;
@@ -614,7 +626,8 @@ hr.line.align-right {
     box-shadow: 3px 3px 0px darken(@color-swatch2,3%);
 }
 
-.widget.contactform fieldset textarea {
+.widget.contactform fieldset textarea,
+.advancedcontactform fieldset textarea  {
     height: 108px;
     width: 100%;
     background-color: @color-swatch2;
@@ -650,7 +663,8 @@ hr.line.align-right {
 }
 
 
-.widget.contactform fieldset button.btn {
+.widget.contactform fieldset button.btn,
+.advancedcontactform fieldset button {
     background-image: url(/index.php/template/the-hickett/images/button-arrow.png);
     background-position: right 10px center;
     background-repeat: no-repeat;
@@ -671,12 +685,14 @@ hr.line.align-right {
     text-shadow: 0px 1px 1px rgba(0,0,0,0.1);
 }
 
-.widget.contactform fieldset button.btn:hover {
+.widget.contactform fieldset button.btn:hover,
+.advancedcontactform fieldset button:hover {
   background-color: @font-swatch7-background-color-hover;
   cursor: pointer;
 }
 
-.widget.contactform fieldset button.btn:active {
+.widget.contactform fieldset button.btn:active,
+.advancedcontactform fieldset button:active {
   box-shadow: inset 0 0 6px rgba(255,255,255,0.9);
 }
 
@@ -707,6 +723,11 @@ hr.line.align-right {
 .widget.contactform fieldset button.btn.bold {
     font-weight: bold;
 }
+
+.advancedcontactform .option-list {
+  padding: 1em 0;
+}
+
 
 /* ===============================
     DROPBOX WIDGET
