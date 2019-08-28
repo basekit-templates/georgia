@@ -1,16 +1,6 @@
 <!doctype html>
-<!--[if lt IE 7]>
-	<html class="no-js ie6 oldie" lang="en">
-<![endif]-->
-<!--[if IE 7]>
-	<html class="no-js ie7 oldie" lang="en">
-<![endif]-->
-<!--[if IE 8]>
-	<html class="no-js ie8 oldie" lang="en">
-<![endif]-->
-<!--[if gt IE 8]><!-->
-	<html class="no-js" lang="{{ page.seoLang }}">
-<!--<![endif]-->
+<html class="no-js" lang="{{ page.seoLang }}">
+
 <head>
 	<meta charset="utf-8" />
 	<title>{{ page.title }}</title>
@@ -27,7 +17,8 @@
 
 	{% include basekit.headScript %}
 </head>
-<body class="{{ page.backgroundClass }}">
+
+<body class="{{ page.backgroundClass }}" {{ isV10sSite ? 'id="migrated-site"' : '' }}>
 
 	{% block content %}
 	{% endblock %}
@@ -37,7 +28,7 @@
 	<!-- jQuery -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
 
-		<!-- Touch Script -->
+	<!-- Touch Script -->
 	<script>
 	    $(document).on('mq4hsChange', function (e) {
 	        console.log(e);
